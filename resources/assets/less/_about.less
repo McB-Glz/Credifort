@@ -1,0 +1,70 @@
+.about{
+
+	.header-about{
+		height: 600px;
+		background: url('../img/headers/header-about.jpg') no-repeat;
+		background-size: 100% auto;
+		padding-top: 250px;
+
+		@media (max-width: @screen-md-max) {
+			background-size: auto 100%;
+			background-position: center center;
+		}
+
+		@media (max-width: @screen-xs-max) {
+			padding-top: 150px;
+		}
+
+		.overlay{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 600px;
+			background-color: rgba(43, 43, 111, 0.75);
+		}
+
+		h2{
+			color: white;
+			text-align: center;
+			text-transform: uppercase;
+			line-height: 1.3;	
+		}
+
+		p{
+			font-family: 'nexa_lightregular';
+			color: white;
+			text-transform: none;
+			margin-top: 15px;
+			font-size: 20px;
+			text-align: center;
+		}
+
+		.row{
+			max-width: 1170px;
+			margin: 0 auto;
+		}
+	}
+
+	.about-uno{
+		margin-top: 50px;
+
+		h3{
+			margin-bottom: 20px;
+		}
+
+		p{
+			font-size: 16px;
+		}
+
+		.about-info{
+			margin-top: 25px;
+			
+			p{
+				font-size: 18px;
+			}
+		}
+	}
+
+	
+}

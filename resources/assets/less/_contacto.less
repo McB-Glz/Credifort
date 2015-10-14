@@ -1,0 +1,143 @@
+.contacto{
+
+	.header-contacto{
+		height: 600px;
+		background: url('../img/headers/header-contacto.jpg') no-repeat;
+		background-size: 100% auto;
+		padding-top: 250px;
+
+		@media (max-width: @screen-md-max) {
+			background-size: auto 100%;
+			background-position: center center;
+		}
+
+		@media (max-width: @screen-xs-max) {
+			padding-top: 150px;
+		}
+
+		.overlay{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 600px;
+			background-color: rgba(43, 43, 111, 0.75);
+		}
+
+		h2{
+			color: white;
+			text-align: center;
+			text-transform: uppercase;
+			line-height: 1.3;	
+		}
+
+		p{
+			font-family: 'nexa_lightregular';
+			color: white;
+			text-transform: none;
+			margin-top: 15px;
+			font-size: 20px;
+			text-align: center;
+		}
+
+		.row{
+			max-width: 1170px;
+			margin: 0 auto;
+		}
+	}
+
+	.contacto-uno{
+		margin-top: 50px;
+
+		h3{
+			margin-bottom: 20px;
+		}
+
+		p{
+			font-size: 16px;
+		}
+
+		.btn-enviar{
+			color: white;
+			text-transform: uppercase;
+			border-radius: 5px;
+			background: @mainPurple;
+			padding: 10px 0;
+			
+			@media (max-width: @screen-xs-max) {
+				margin-bottom: 50px;
+			}
+		}
+
+		.btn-default{
+			height: 50px;
+			border-radius: 5px;
+			border-color: #E6E9ED;
+			color: @mainGrey;
+			margin-bottom: 15px;
+			font-family: 'nexa_lightregular'; 
+			font-size: 14px;
+		}
+
+		input{
+			height: 50px;
+			border-radius: 5px;
+			border-color: #E6E9ED;
+		}
+
+		select{
+			height: 50px;
+			border-color: #E6E9ED;
+			color: @mainGrey;
+		}
+
+		textarea{
+			border-color: #E6E9ED;
+		}
+
+		#empresa{
+			//margin-top: 15px;
+		}
+
+		.form-control{
+
+			&::-webkit-input-placeholder { color:@mainGrey; font-family: 'nexa_lightregular'; font-size: 14px; }
+			&::-moz-placeholder { color:@mainGrey; font-family: 'nexa_lightregular'; font-size: 14px; } /* firefox 19+ */
+			&:-ms-input-placeholder { color:@mainGrey; font-family: 'nexa_lightregular'; font-size: 14px; } /* ie */
+			&input:-moz-placeholder { color:@mainGrey; font-family: 'nexa_lightregular'; font-size: 14px; }
+		}
+
+		.contacto-form{
+			margin-top: 25px;
+		}
+
+		h4{
+			margin-top: 0;
+			margin-bottom: 15px;
+		}
+
+		a{
+			color: @mainGrey;
+
+			&:hover{
+				text-decoration: none;
+				color: @mainPurple;
+			}
+		}
+
+		address{
+			margin-bottom: 15px;
+			font-family: 'nexa_lightregular';
+		}
+
+		i{
+			margin-right: 20px;
+		}
+
+		iframe{
+			margin-top: 25px;
+		}
+	}
+
+	
+}

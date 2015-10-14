@@ -1,0 +1,137 @@
+.home{
+	
+	h3{
+		text-align: center;
+	}
+
+	.header-home{
+		height: 800px;
+		background: url('../img/headers/header-home.jpg') no-repeat;
+		background-size: 100% auto;
+		padding-top: 300px;
+
+		@media (max-width: @screen-md-max) {
+			background-size: auto 100%;
+			background-position: center center;
+			height: 600px;
+		}
+
+		@media (max-width: @screen-xs-max) {
+			padding-top: 100px;
+		}
+
+		.overlay{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 800px;
+			background-color: rgba(43, 43, 111, 0.75);
+
+			@media (max-width: @screen-md-max) {
+				height: 600px;
+			}
+		}
+
+		h2{
+			color: white;
+			text-align: center;
+			text-transform: none;
+			line-height: 1.3;
+
+			@media (max-width: @screen-xs-max) {
+				font-size: 24px;
+			}
+
+			small{
+				font-family: 'nexa_lightregular';
+				color: white;
+			}	
+		}
+
+		.row{
+			max-width: 1170px;
+			margin: 0 auto;
+		}
+	}
+
+	.home-one{
+
+		padding-top: 50px;
+		padding-bottom: 50px;
+
+		p{
+			font-size: 18px;
+			text-align: center;
+		}
+
+		.img-wrapper{
+			border-radius: 50%;
+			width: 200px;
+			height: 200px;
+			margin: 0 auto;
+			display: table;
+			margin-bottom: 25px;
+			
+			img{
+				margin: 0 auto;
+				display: table-cell;
+				vertical-align: middle;
+				padding-top: 35px;
+			}
+		}
+
+		.compu{
+			background: #1AB7F3;
+		}
+
+		.clock{
+			background: #6BCCCF;
+		}
+
+		.money{
+			background: #FEC200; 
+		}
+
+		.iconos{
+			margin-top: 25px;
+
+			p{
+				@media (max-width: @screen-xs-max) {
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+
+	.home-dos{
+		padding-top: 50px;
+		background: @mainLightPurple;
+
+		.row{
+			max-width: 1170px;
+			margin: 0 auto;
+			margin-bottom: 50px;
+		}
+
+		p{
+			font-size: 16px;
+		}
+	}
+
+	.home-tres{
+		padding-top: 50px;
+
+		.media{
+			margin-bottom: 25px;
+		}
+
+		h3{
+			margin-bottom: 50px;
+		}
+
+		p{
+			font-size: 20px;
+		}
+	}
+}

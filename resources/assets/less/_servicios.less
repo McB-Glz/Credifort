@@ -1,0 +1,136 @@
+.servicios{
+
+	.header-servicios{
+		height: 600px;
+		background: url('../img/headers/header-servicios.jpg') no-repeat;
+		background-size: 100% auto;
+		padding-top: 250px;
+
+		@media (max-width: @screen-md-max) {
+			background-size: auto 100%;
+			background-position: center center;
+		}
+
+		@media (max-width: @screen-xs-max) {
+			padding-top: 150px;
+		}
+
+		.overlay{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 600px;
+			background-color: rgba(43, 43, 111, 0.75);
+		}
+
+		h2{
+			color: white;
+			text-align: center;
+			text-transform: uppercase;
+			line-height: 1.3;	
+		}
+
+		p{
+			font-family: 'nexa_lightregular';
+			color: white;
+			text-transform: none;
+			margin-top: 15px;
+			font-size: 20px;
+			text-align: center;
+		}
+
+		.row{
+			max-width: 1170px;
+			margin: 0 auto;
+		}
+	}
+
+	.servicios-uno{
+		margin-top: 50px;
+
+		h3{
+			margin-bottom: 20px;
+		}
+
+		p{
+			font-size: 16px;
+		}
+
+		.servicios-tabs{
+			border-bottom: 1px solid @mainLightGrey;
+			padding-bottom: 50px;
+
+			.nav-tabs{
+				border: none;
+
+				> li.active > a{
+					color: @mainBlue;
+					border-color: @mainBlue;
+				}
+			}
+		}
+
+		.btn-tab{
+			background: white;
+			border-radius: 5px;
+			border: 1px solid @mainGrey;
+			text-transform: uppercase;
+			padding: 10px;
+			font-size: 16px;
+			color: @mainGrey;
+			transition: all .3s;
+			margin-left: 5px;
+			margin-right: 5px;
+
+			&:hover{
+				color: @mainBlue;
+				border-color: @mainBlue;
+			}
+		}
+
+		.tab-pane{
+			padding-top: 25px;
+		}
+
+		.tab-info{
+			margin-bottom: 25px;
+		}
+
+		.docs{
+			border-top: 1px solid @mainLightGrey;
+			padding-top: 25px;
+		}
+
+		.icons{
+			border-bottom: 1px solid @mainLightGrey;
+			padding-bottom: 25px;
+			margin-top: 25px;
+			margin-bottom: 25px;
+
+			.img-wrapper{
+				
+				margin: 0 auto;
+				display: table;
+				margin-bottom: 25px;
+				
+				img{
+					margin: 0 auto;
+					display: table-cell;
+					vertical-align: middle;
+					padding-top: 35px;
+				}
+			}
+
+			p{
+				text-align: center;
+			}
+		}
+
+		.disclaimer{
+			margin-top: 25px;
+		}
+	}
+
+	
+}

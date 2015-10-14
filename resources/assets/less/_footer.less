@@ -1,0 +1,160 @@
+footer{
+	position: relative;
+	bottom: 0;
+
+	.footer-top{
+		background-color: #EFEFF3;
+	}
+
+	.footer-bottom{
+		background-color: @mainPurple;
+	}
+
+	.navbar-collapse{
+		padding: 0;
+	}
+
+	.container-fluid{
+		.row{
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+	}
+
+	#footer-menu{
+		margin-top: 20px;
+		background: none;
+		border: 0;
+
+		.footer-nav-1{
+			a{
+				padding-left: 0;
+			}
+		}
+
+		a{
+			text-transform: uppercase;
+			color: @mainGrey;
+			transition: all .3s;
+
+			&:hover{
+				color: @mainPurple;
+			}
+		}
+	}
+
+	.copyright{
+		padding-bottom: 20px;
+
+		@media (max-width: @screen-xs-max) {
+			text-align: center;
+			padding-top: 20px;
+			padding-bottom: 0;
+		}
+
+		.copy{
+			padding-left: 0;
+
+			@media (max-width: @screen-xs-max) {
+				padding-left: inherit;
+			}
+		}
+
+		p{
+			font-size: 12px;
+
+			a{
+				color: @mainGrey;
+
+				&:hover{
+					color: @mainPurple;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.footer-logos{
+		text-align: center;
+
+		img{
+			padding: 40px 20px;
+
+			@media (max-width: 1024px) {
+				padding: 40px 5px 10px 5px;
+			}
+
+			@media (max-width: @screen-xs-max) {
+				padding: 20px;
+			}
+		}
+	}
+
+	.footer-info{
+		padding-top: 15px;
+		padding-bottom: 15px;
+
+		@media (max-width: @screen-xs-max) {
+			text-align: center;
+		}
+
+		p{
+			color: #EFEFF3;
+			font-weight: 300;
+			margin-bottom: 0;
+
+			a{
+				color: #EFEFF3;
+				font-weight: 300;
+
+				&:hover{
+					color: @mainGrey;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.follow{
+		padding-top: 15px;
+		padding-bottom: 15px;
+		text-align: right;
+
+		@media (max-width: @screen-xs-max) {
+			text-align: center;
+		}
+
+		p{
+			text-transform: uppercase;
+			font-weight: 400;
+			color: #EFEFF3;
+			margin-bottom: 0;
+
+			a{
+				color: #EFEFF3;
+
+				&:hover{
+					color: @mainGrey;
+				}
+			}
+
+			i{
+				padding: 0 10px;
+			}
+
+			img{
+				vertical-align: middle;
+			}
+		}
+	}
+
+	.logoDinkbit{
+		height: 20px;
+		padding-left: 15px;
+	}
+
+
+	.logo-footer{
+		display: inline;
+	}
+}
